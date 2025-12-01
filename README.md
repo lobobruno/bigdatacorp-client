@@ -1,6 +1,31 @@
 # BigDataCorp Client
 
-TypeScript/JavaScript client for the BigDataCorp API. Provides type-safe access to all BigDataCorp data enrichment and validation services.
+[![GitHub stars](https://img.shields.io/github/stars/lobobruno/bigdatacorp-client?style=social)](https://github.com/lobobruno/bigdatacorp-client/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/lobobruno/bigdatacorp-client?style=social)](https://github.com/lobobruno/bigdatacorp-client/network/members)
+[![GitHub watchers](https://img.shields.io/github/watchers/lobobruno/bigdatacorp-client?style=social)](https://github.com/lobobruno/bigdatacorp-client/watchers)
+
+[![npm version](https://img.shields.io/npm/v/bigdatacorp-client.svg)](https://www.npmjs.com/package/bigdatacorp-client)
+[![npm downloads](https://img.shields.io/npm/dm/bigdatacorp-client.svg)](https://www.npmjs.com/package/bigdatacorp-client)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue.svg)](https://www.typescriptlang.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-18.0+-green.svg)](https://nodejs.org/)
+
+> TypeScript/JavaScript client for the BigDataCorp API. Provides type-safe access to all BigDataCorp data enrichment and validation services.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Quick Start](#quick-start)
+- [Configuration](#configuration)
+- [Available Resources](#available-resources)
+- [Usage Examples](#usage-examples)
+- [Error Handling](#error-handling)
+- [Request Options](#request-options)
+- [Utility Functions](#utility-functions)
+- [TypeScript Support](#typescript-support)
+- [Requirements](#requirements)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Installation
 
@@ -287,6 +312,33 @@ const response = await api.pessoas.basicData(request);
 - Node.js 18.0.0 or higher
 - TypeScript 5.0 or higher (for TypeScript users)
 
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## Support
+
+If you find this project helpful, please give it a star on GitHub!
+
+[![GitHub stars](https://img.shields.io/github/stars/lobobruno/bigdatacorp-client?style=social)](https://github.com/lobobruno/bigdatacorp-client)
+
+## Author
+
+**Bruno Lobo**
+
+[![GitHub](https://img.shields.io/badge/GitHub-@lobobruno-181717?style=flat&logo=github&logoColor=white)](https://github.com/lobobruno)
+[![X (Twitter)](https://img.shields.io/badge/X-@brunowlf-000000?style=flat&logo=x&logoColor=white)](https://x.com/brunowlf)
+
 ## License
 
-MIT
+MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Made with :heart: in [Brazil](https://github.com/lobobruno)

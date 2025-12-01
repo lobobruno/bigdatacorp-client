@@ -27,7 +27,8 @@
     "test:coverage": "vitest --coverage",
     "lint": "biome lint ./src --write && biome format ./src --write",
     "typecheck": "tsc --noEmit",
-    "prepublishOnly": "npm run build && npm run test:unit"
+    "prepublishOnly": "npm run build && npm run test:unit",
+    "release": "tsx scripts/publish.ts"
   },
   "keywords": [
     "bigdatacorp",
@@ -41,7 +42,15 @@
     "kyc",
     "compliance"
   ],
-  "author": "",
+  "author": "Bruno Lobo <https://github.com/lobobruno>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lobobruno/bigdatacorp-client.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lobobruno/bigdatacorp-client/issues"
+  },
+  "homepage": "https://github.com/lobobruno/bigdatacorp-client#readme",
   "license": "MIT",
   "engines": {
     "node": ">=18.0.0"
