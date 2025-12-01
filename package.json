@@ -1,0 +1,60 @@
+{
+  "name": "bigdatacorp-client",
+  "version": "1.0.0",
+  "description": "BigDataCorp API client for Node.js and browsers",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "generate": "tsx scripts/generate-client.ts",
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "test": "vitest",
+    "test:unit": "vitest --run --exclude tests/integration.test.ts",
+    "test:integration": "vitest --run tests/integration.test.ts",
+    "test:coverage": "vitest --coverage",
+    "lint": "biome lint ./src --write && biome format ./src --write",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build && npm run test:unit"
+  },
+  "keywords": [
+    "bigdatacorp",
+    "bdc",
+    "api",
+    "brazil",
+    "cnpj",
+    "cpf",
+    "data",
+    "enrichment",
+    "kyc",
+    "compliance"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.3.8",
+    "@types/node": "^20.10.0",
+    "@vitest/coverage-v8": "^4.0.14",
+    "dotenv": "^17.2.3",
+    "eslint": "^8.55.0",
+    "tsup": "^8.0.1",
+    "tsx": "^4.6.2",
+    "typescript": "^5.3.2",
+    "vitest": "^1.0.4"
+  }
+}

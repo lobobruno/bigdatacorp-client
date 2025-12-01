@@ -1,0 +1,9 @@
+node_modules
+venv
+dist
+data
+.env
+*.log
+.DS_Store
+example.ts
+.claude
